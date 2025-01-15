@@ -24,19 +24,19 @@
   --def-padding: 0.6rem 1rem 0.6rem 1rem;
 
 
-/*  font sizes*/
-  --font-3s:0.7rem;
+  /*  font sizes*/
+  --font-3s: 0.7rem;
   --font-2s: 0.85rem;
   --font-1s: 0.9rem;
 
-  --font:1rem;
+  --font: 1rem;
 
-  --font-1m:1.15rem;
-  --font-2m:1.3rem;
-  --font-3m:1.45rem;
-  --font-4m:1.6rem;
+  --font-1m: 1.15rem;
+  --font-2m: 1.3rem;
+  --font-3m: 1.45rem;
+  --font-4m: 1.6rem;
 
-  --font-1l:5rem;
+  --font-1l: 5rem;
   --font-2l: 6rem;
   --font-3l: 8rem;
   --font-4l: 10rem;
@@ -49,9 +49,8 @@
 
   --letter-spacing: 0.05em;
 
-/*  margin */
+  /*  margin */
   --margin-l-top: 150px 0;
-
 
 
 }
@@ -112,7 +111,7 @@ video {
   vertical-align: middle;
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
@@ -145,14 +144,13 @@ body {
 }
 
 
-
 /* MAIN FILE */
 
-.main-index{
+.main-index {
   height: 250vh;
 }
 
-.hero{
+.hero {
   display: block;
   position: relative;
 
@@ -162,7 +160,7 @@ body {
   overflow: hidden;
 }
 
-#hero-img{
+#hero-img {
   width: 100%;
   height: 95vh;
   /*height: 1100px;*/
@@ -171,8 +169,7 @@ body {
 }
 
 
-
-#mini-description{
+#mini-description {
   position: absolute;
   left: 40px;
   bottom: 220px;
@@ -188,7 +185,7 @@ body {
 
 }
 
-#main-description{
+#main-description {
   position: absolute;
   left: 40px;
   bottom: 90px;
@@ -204,13 +201,13 @@ body {
 
 }
 
-.assurance{
+.assurance {
   display: block;
   position: relative;
   margin: 5px;
 }
 
-#sustainable{
+#sustainable {
   position: absolute;
 
   top: 125px;
@@ -222,7 +219,7 @@ body {
 }
 
 
-#high-quality{
+#high-quality {
   position: absolute;
   font-size: var(--font-2m);
 
@@ -230,7 +227,7 @@ body {
   right: 20px;
 }
 
-.enhance{
+.enhance {
   display: block;
   position: relative;
 
@@ -238,7 +235,7 @@ body {
 
 }
 
-.enhance p{
+.enhance p {
   position: absolute;
 
   left: 20px;
@@ -248,25 +245,22 @@ body {
   letter-spacing: 0.05em;
 }
 
-#enhance01{
+#enhance01 {
   position: absolute;
 
   width: 600px;
 
-  left:20px;
+  left: 20px;
   top: 400px;
 
 }
 
-#enhance02{
+#enhance02 {
   position: absolute;
   width: 600px;
 
-  right:20px;
+  right: 20px;
 }
-
-
-
 
 
 @media only screen and (min-width: 35em) {
