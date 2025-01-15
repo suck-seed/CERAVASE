@@ -1,0 +1,273 @@
+/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+:root {
+  --secondary-color: #f6f1eb; /* Blue */
+  --primary-color: #403a34; /* Gray */
+  --accent-color-green: #578E7E;
+  --accent-color-beige: #c9c1b6;
+
+  --header-height: 8rem;
+  --header-shrink-height: 5rem;
+
+  --border-radius: 0;
+  --def-padding: 0.6rem 1rem 0.6rem 1rem;
+
+
+/*  font sizes*/
+  --font-3s:0.7rem;
+  --font-2s: 0.85rem;
+  --font-1s: 0.9rem;
+
+  --font:1rem;
+
+  --font-1m:1.15rem;
+  --font-2m:1.3rem;
+  --font-3m:1.45rem;
+  --font-4m:1.6rem;
+
+  --font-1l:5rem;
+  --font-2l: 6rem;
+  --font-3l: 8rem;
+  --font-4l: 10rem;
+  --font-5l: 12rem;
+
+  /* FONT WEIGHT */
+  --font-weight-light: 400;
+  --font-weight-mid: 500;
+  --font-weight-bold: 650;
+
+  --letter-spacing: 0.05em;
+
+/*  margin */
+  --margin-l-top: 150px 0;
+
+
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html {
+  color: var(--primary-color);
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: "Bw Gradual DEMO", serif;
+  font-weight: bold;
+
+  scroll-behavior: smooth;
+
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+
+textarea {
+  resize: vertical;
+}
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+body {
+  letter-spacing: 0.05em;
+  /*margin: 20px 20px;*/
+  padding: 0;
+  height: 100%;
+  background-color: var(--secondary-color);
+
+}
+
+
+
+/* MAIN FILE */
+
+.main-index{
+  height: 250vh;
+}
+
+.hero{
+  display: block;
+  position: relative;
+
+  margin: 20px 20px;
+
+  border: 1px solid var(--primary-color);
+  overflow: hidden;
+}
+
+#hero-img{
+  width: 100%;
+  height: 95vh;
+  object-fit: fill;
+
+}
+
+
+
+#mini-description{
+  position: absolute;
+  left: 40px;
+  bottom: 220px;
+
+  font-size: var(--font-2s);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  transform: translateY(-50%);
+  font-weight: var(--font-weight-bold);
+
+  margin: 5px;
+
+}
+
+#main-description{
+  position: absolute;
+  left: 40px;
+  bottom: 90px;
+
+  font-size: 6rem;
+
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing);
+  /*transform: translateY(-50%);*/
+  font-weight: var(--font-weight-bold);
+
+  margin: 5px;
+
+}
+
+.assurance{
+  display: block;
+  position: relative;
+  margin: 5px;
+}
+
+#sustainable{
+  position: absolute;
+
+  top: 125px;
+  left: 20px;
+
+  font-size: 3.7rem;
+  font-weight: var(--font-weight-bold);
+
+}
+
+
+#high-quality{
+  position: absolute;
+  font-size: var(--font-2m);
+
+  top: 400px;
+  right: 20px;
+}
+
+.enhance{
+  display: block;
+  position: relative;
+
+  margin: 495px 0;
+
+}
+
+.enhance p{
+  position: absolute;
+
+  left: 20px;
+  font-size: var(--font-2s);
+  font-weight: var(--font-weight-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+#enhance01{
+  position: absolute;
+
+  width: 600px;
+
+  left:20px;
+  top: 400px;
+
+}
+
+#enhance02{
+  position: absolute;
+  width: 600px;
+
+  right:20px;
+}
+
+
+
+
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}

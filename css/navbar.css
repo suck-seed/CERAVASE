@@ -1,0 +1,167 @@
+.navbar {
+
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+
+  align-items: center;
+  font-size: var(--font-2s);
+  font-weight: 700;
+
+  border: 1px solid var(--primary-color );
+  background-color: var(--secondary-color);
+
+/*  fixing into place*/
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  left: 20px;
+  z-index: 1000;
+
+
+}
+
+.border-right{
+  border-right: 1px solid var(--primary-color);
+}
+.border-left{
+  border-left: 1px solid var(--primary-color);
+}
+
+.nav-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.nav-item:hover, .dropdown:hover{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+
+
+/* logo */
+.navbar .logo {
+  grid-column: 1 / span 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* product */
+.navbar .dropdown {
+  grid-column: 3 / span 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+/* empty space */
+.navbar .nav-empty {
+  grid-column: 8 / span 8;
+}
+
+/* lookbook */
+.navbar a:nth-of-type(2) {
+  grid-column: 16 / span 3;
+}
+
+/* signin */
+.navbar a:nth-of-type(3) {
+  grid-column: 19 / span 2;
+}
+
+/* cart */
+.navbar .cart {
+  grid-column: 21 / span 2;
+}
+
+/* contact */
+.navbar a:nth-of-type(5) {
+  grid-column: 23 / span 2;
+}
+
+
+
+.dropdown {
+  position: relative;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+
+  top: 84%;
+  left: -40.5%;
+  min-width: 97.8vw;
+
+  background-color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+  margin-top: 10px;
+}
+
+
+.dropdown-content a {
+  display: block;
+  padding: 0.4rem 1rem;
+  text-decoration: none;
+  color: var(--primary-color);
+
+  font-size: var(--font-2s);
+
+}
+
+
+.dropdown-content a:first-child {
+  padding-top: 30px;
+}
+
+.dropdown-content a:last-child {
+  padding-bottom: 30px;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  align-items: center;
+
+}
+
+.dropdown:hover .dropdown-link {
+  width: 28.5vw;
+  border-right: 1px solid var(--primary-color);
+}
+
+.dropdown:hover .slide{
+
+  width: 32.7vw;
+  height: 200px;
+
+  border-right: 1px solid var(--primary-color);
+  padding: 10px;
+
+  font-size: 4rem;
+  text-wrap: pretty;
+
+}
+
+.cart {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 2px 6px;
+
+  font-size: 12px;
+}
