@@ -1,10 +1,9 @@
 .main-products{
 
-  height: 300vh;
+  height: 400vh;
 
   position: relative;
   display: block;
-
 
 }
 
@@ -34,7 +33,7 @@
   top: 100px ;
   /*left: 20px; left kam gardaina here*/ ;
 
-  width: 300px;
+  width: 20vw;
   /*border: 1px solid var(--primary-color);*/
 }
 
@@ -53,6 +52,7 @@
 }
 
 
+/* styling list */
 .type-list a{
   text-decoration: none;
   color: var(--primary-color);
@@ -61,21 +61,32 @@
   font-weight: var(--font-weight-bold);
   width: 90%;
 
-  padding: 10px 20px 0 10px;
+  padding: 10px 20px 0 20px;
 
   display: inline-flex;
 
+  transition: padding 0.5s;
+
 }
 
+.invisible{
+  background-color: var(--primary-color);
+  margin: 0 5px 0 0;
 
+  height: 4px;
+  width: 4px;
+
+  align-self: center;
+  transition: padding 0.6s ease-in;
+
+
+}
+
+/* dot on hover, visible*/
 .type-list a:hover .invisible{
   display: block;
   padding: 0 5px 0 0;
 }
-
-
-
-
 
 
 input[type=text]{
@@ -83,7 +94,7 @@ input[type=text]{
   font-size: var(--font-2s);
   font-weight: var(--font-weight-mid);
 
-  padding: 15px 20px 15px 15px;
+  padding: 15px 20px 15px 20px;
 
   background-color: var(--secondary-color);
   color: var(--primary-color);
@@ -93,3 +104,54 @@ input[type=text]{
   border-radius: 0;
   width: 100%;
 }
+
+ /*
+
+ PRODUCT ALIGNMENT
+
+*/
+
+.products{
+
+  position: absolute;
+
+  margin-top: 637px;
+  margin-left: 25vw;
+  top: 0;
+  padding: 20px;
+}
+
+.products img{
+  width: 600px;
+  height: 600px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

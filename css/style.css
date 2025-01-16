@@ -53,6 +53,10 @@
   --margin-l-top: 150px 0;
 
 
+/*  navbar height */
+  --nav-height: 54px
+
+
 }
 
 * {

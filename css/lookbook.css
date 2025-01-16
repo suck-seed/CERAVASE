@@ -40,8 +40,10 @@
 }
 
 .heading-02{
-  top: 65%;
-  left: 5%;
+  top: 15%;
+  left: 1%;
+  color: var(--primary-color);
+
 }
 
 
@@ -49,8 +51,8 @@
   top: 10%;
   left: 60%;
 
-  /*color: var(--primary-color);*/
 }
+
 
 .heading-04{
   top: 69%;
@@ -58,8 +60,8 @@
 }
 
 .heading-05{
-  top: 80%;
-  left: 60%;
+  top: 58%;
+  left: 25%;
 
 }
 
