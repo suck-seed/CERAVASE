@@ -127,6 +127,10 @@ textarea {
   resize: vertical;
 }
 
+.invisible {
+  display: none;
+}
+
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.

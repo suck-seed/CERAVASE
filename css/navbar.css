@@ -34,7 +34,7 @@
   padding: 1rem;
 }
 
-.nav-item:hover, .dropdown:hover{
+.nav-item:hover, .dropdown:hover  {
   background-color: var(--primary-color);
   color: var(--secondary-color);
 }
@@ -146,7 +146,7 @@
   padding: 10px;
 
   font-size: 4rem;
-  text-wrap: pretty;
+  text-wrap: nowrap;
 
 }
 
@@ -156,12 +156,18 @@
 
 .cart-count {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 2px;
+  right: 2px;
 
   background-color: var(--primary-color);
   color: var(--secondary-color);
   padding: 2px 6px;
 
   font-size: 12px;
+}
+
+
+.cart:hover .cart-count{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }

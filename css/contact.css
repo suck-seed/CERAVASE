@@ -22,8 +22,9 @@
 
   color: var(--secondary-color);
 
-  top: 200px;
-  left: 20px;
+  margin: 5px;
+  top: 195px;
+  left: 15px;
 
   font-size: var(--font-2l);
 
@@ -34,8 +35,9 @@
   position: absolute;
   color: var(--secondary-color);
 
-  top: 260px;
-  right: 20px;
+  margin: 5px;
+  top: 255px;
+  right: 15px;
 
   text-align: right;
 
@@ -44,8 +46,10 @@
 
 .info-card {
   position: absolute;
-  top: 600px;
-  left: 20px;
+
+  margin: 5px;
+  top: 595px;
+  left: 15px;
 
   width: 350px;
 
@@ -112,8 +116,10 @@
 /* FORM BOX */
 .contact-form{
   position: absolute;
-  top: 895px;
-  left: 25.09%;
+
+  margin: 5px;
+  top: 890px;
+  left: 24.8%;
 
   width: 900px;
   height: 700px;
