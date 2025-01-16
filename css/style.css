@@ -138,6 +138,7 @@ textarea {
 
 .invisible {
   display: none;
+  visibility: hidden;
 }
 
 
