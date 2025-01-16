@@ -222,8 +222,8 @@ input[type=text]{
 }
 
 #img05{
-  width: 35vw;
-  height: 70vh;
+  width: 30vw;
+  height: 75vh;
 }
 
 
@@ -250,9 +250,11 @@ input[type=text]{
 /* CUSTOM ORDER */
 
 .custom-order{
+
   position: relative;
   width: 100vw;
   height: 80vh;
+
 }
 
 .custom-order img{
@@ -286,9 +288,11 @@ input[type=text]{
 
 .order-box{
   position: absolute;
-  background-color: var(--secondary-color);
+
+  /* placing in center */
   top: 50%;
-  left: 33%;
+  left: 50%;
+  transform: translate(-50%, 0%);
 
   width: 650px;
   height: 350px;
@@ -301,6 +305,7 @@ input[type=text]{
   justify-content: space-around;
   text-align: center;
 
+  background-color: var(--secondary-color);
   border: 1px solid var(--primary-color);
 }
 
