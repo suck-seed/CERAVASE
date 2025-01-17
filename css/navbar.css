@@ -9,6 +9,7 @@
 
   /*border: 1px solid var(--primary-color );*/
   background-color: var(--secondary-color);
+  color: var(--primary-color);
 
 /*  fixing into place*/
   position: fixed;
@@ -21,13 +22,6 @@
 
 }
 
-/*.border-right{*/
-/*  border-right: 1px solid var(--primary-color);*/
-/*}*/
-/*.border-left{*/
-/*  border-left: 1px solid var(--primary-color);*/
-/*}*/
-
 .nav-item{
   display: flex;
   justify-content: center;
@@ -37,8 +31,6 @@
   height: var(--nav-height);
 
 }
-
-
 
 .nav-item:hover, .dropdown:hover  {
   background-color: var(--primary-color);
@@ -116,27 +108,43 @@
   position: relative;
   color: var(--primary-color);
   background-color: var(--secondary-color);
+
   border: 1px solid var(--primary-color);
+  /*border-top: none;*/
   height: var(--nav-height);
 }
 
 .dropdown-content{
-  display: none;
+  display:none;
   position: absolute;
 
-  top: 84%;
+  top: 82%;
   left: -40.5%;
   min-width: 97.8vw;
+  height: 210px;
 
   background-color: var(--secondary-color);
   border: 1px solid var(--primary-color);
+  border-top: none;
   margin-top: 10px;
+
+  z-index: 10;
 }
 
+.dropdown-link{
+  height: 100%;
 
-.dropdown-content a {
+  width: 29.1%;
+  border:1px solid var(--primary-color);
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+  border-right: none;
+}
+
+.dropdown-link a {
   display: block;
-  padding: 0.4rem 1rem;
+  padding: 0.4rem 0.4rem;
   text-decoration: none;
   color: var(--primary-color);
 
@@ -145,38 +153,87 @@
 }
 
 
-.dropdown-content a:first-child {
+.dropdown-link a:first-child {
   padding-top: 30px;
 }
 
-.dropdown-content a:last-child {
+.dropdown-link a:last-child {
   padding-bottom: 30px;
 }
 
 
+/* hover ma dekhauna */
 .dropdown:hover .dropdown-content {
   display: flex;
-  align-items: center;
 
 }
 
-.dropdown:hover .dropdown-link {
-  width: 28.5vw;
-  border-right: 1px solid var(--primary-color);
-}
-
-.dropdown:hover .slide{
-
-  width: 32.7vw;
-  height: 200px;
-
-  border-right: 1px solid var(--primary-color);
+.slide{
+  width: 33.5%;
+  height: 100%;
   padding: 10px;
 
-  font-size: 4rem;
-  text-wrap: nowrap;
+  border: 1px solid var(--primary-color);
+  border-top: none;
+  border-bottom: none;
+
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+
+  font-size: var(--font-4l);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 11;
+  overflow: hidden;
+  position: relative;
+  /* Add fixed width */
+  max-width: 33.5%;
+  flex: 0 0 33.5%;
+
 
 }
+
+
+.slide-text-container {
+  display: flex;
+  white-space: nowrap;
+  animation: slideText 20s linear infinite;
+  /* Contain the text within parent */
+  position: absolute;
+  width: max-content;
+}
+
+
+/* Add text wrapper div inside .slide */
+.slide-text {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding-right: 50px;
+
+}
+
+/* Define the sliding animation */
+@keyframes slideText {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+
+
+
+.dropdown-image{
+  height: 100%;
+  /*background-color: #403a34;*/
+  /*width:32vw ;*/
+  /*border: 1px solid var(--primary-color);*/
+}
+
 
 .cart {
   position: relative;
@@ -199,3 +256,6 @@
   background-color: var(--secondary-color);
   color: var(--primary-color);
 }
+
+
+
