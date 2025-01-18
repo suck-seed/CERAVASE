@@ -1,10 +1,9 @@
-.main-products{
+.main-products {
 
   height: 320vh;
 
   position: relative;
   display: block;
-
 
 
 }
@@ -13,7 +12,7 @@
   z-index: 1000;
 }
 
-.our-products{
+.our-products {
   position: relative;
   display: block;
   width: 400px;
@@ -29,19 +28,19 @@
 
 }
 
-.product-nav{
+.product-nav {
   position: sticky;
   z-index: 900; /* Lower than navbar's z-index */
 
   margin: 20px;
-  top: 100px ;
-  /*left: 20px; left kam gardaina here*/ ;
+  top: 100px;
+  /*left: 20px; left kam gardaina here*/;
 
   width: 19vw;
   /*border: 1px solid var(--primary-color);*/
 }
 
-.type-list{
+.type-list {
   display: flex;
   flex-direction: column;
 
@@ -57,7 +56,7 @@
 
 
 /* styling list */
-.type-list a{
+.type-list a {
   text-decoration: none;
   color: var(--primary-color);
 
@@ -73,7 +72,7 @@
 
 }
 
-.invisible{
+.invisible {
   background-color: var(--primary-color);
   margin: 0 5px 0 0;
 
@@ -87,14 +86,14 @@
 }
 
 /* dot on hover, visible*/
-.type-list a:hover .invisible{
+.type-list a:hover .invisible {
   display: block;
   visibility: visible;
   padding: 0 5px 0 0;
 }
 
 
-input[type=text]{
+input[type=text] {
   font-family: "Bw Gradual DEMO", serif;
   font-size: var(--font-2s);
   font-weight: var(--font-weight-mid);
@@ -110,13 +109,13 @@ input[type=text]{
   width: 100%;
 }
 
- /*
+/*
 
- PRODUCT ALIGNMENT
+PRODUCT ALIGNMENT
 
 */
 
-.products{
+.products {
 
   position: absolute;
 
@@ -129,7 +128,7 @@ input[type=text]{
   width: 74.4%;
 }
 
-.product{
+.product {
   padding: 10px;
   margin: auto;
   height: auto;
@@ -144,12 +143,12 @@ input[type=text]{
 }
 
 
-.product img{
+.product img {
   object-fit: cover;
   z-index: 1;
 }
 
-.product p{
+.product p {
   padding: 10px 10px 5px 0;
 
   font-size: var(--font-4m);
@@ -159,53 +158,53 @@ input[type=text]{
 
 
 /* PRODUCT 1 */
-.product-1{
+.product-1 {
 
   top: 2vh;
   left: 1vw;
 
 }
 
-#img01{
+#img01 {
   width: 30vw;
   height: 70vh;
 }
 
 
 /* PRODUCT 2 */
-.product-2{
+.product-2 {
   top: 2vh;
   right: 0;
 }
 
-#img02{
+#img02 {
   width: 30vw;
   height: 55vh;
 }
 
 /* PRODUCT 3 */
-.product-3{
+.product-3 {
 
   top: 90vh;
   left: 1vw;
 
 }
 
-#img03{
+#img03 {
   width: 44vw;
   height: 60vh;
 }
 
 
 /* PRODUCT 4 */
-.product-4{
+.product-4 {
 
   top: 90vh;
   right: 0;
 
 }
 
-#img04{
+#img04 {
   width: 25vw;
   height: 40vh;
 }
@@ -213,23 +212,23 @@ input[type=text]{
 
 /* PRODUCT 5 */
 
-.product-5{
+.product-5 {
   top: 170vh;
   right: 0;
 }
 
-#img05{
+#img05 {
   width: 30vw;
   height: 75vh;
 }
 
 
-.product-6{
+.product-6 {
   top: 170vh;
   left: 1vw;
 }
 
-#img06{
+#img06 {
 
 
   width: 20vw;
@@ -238,15 +237,9 @@ input[type=text]{
 }
 
 
-
-
-
-
-
-
 /* CUSTOM ORDER */
 
-.custom-order{
+.custom-order {
 
   position: relative;
   width: 100vw;
@@ -254,7 +247,7 @@ input[type=text]{
 
 }
 
-.custom-order img{
+.custom-order img {
   width: 100vw;
   /*height: 75vh;*/
 
@@ -262,7 +255,7 @@ input[type=text]{
 }
 
 
-.for-any{
+.for-any {
   position: absolute;
   top: 70px;
   left: 15px;
@@ -272,7 +265,7 @@ input[type=text]{
 }
 
 
-.request{
+.request {
   position: absolute;
   top: 300px;
   right: 15px;
@@ -283,7 +276,7 @@ input[type=text]{
 }
 
 
-.order-box{
+.order-box {
   position: absolute;
 
   /* placing in center */
@@ -306,13 +299,13 @@ input[type=text]{
   border: 1px solid var(--primary-color);
 }
 
-.order-box p{
+.order-box p {
   color: var(--primary-color);
   font-size: var(--font-4m);
   font-weight: var(--font-weight-bold);
 }
 
-.order-box button{
+.order-box button {
   background-color: var(--secondary-color);
   color: var(--primary-color);
 
@@ -323,44 +316,40 @@ input[type=text]{
   padding: 20px 40px;
 
 
-
 }
 
 
-.order-box button:hover{
+.order-box button:hover {
   background-color: var(--primary-color);
   color: var(--secondary-color);
 }
 
 
-
-
-.product-details{
+.product-details {
   display: none;
 }
 
 
-
-.product:hover .product-details{
+.product:hover .product-details {
   display: grid;
 
   height: 130px;
-  width: 300px;
+  width: 310px;
 
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
 
-  border: 1px solid var(--primary-color);
+  /*border: 1px solid var(--primary-color);*/
 
   position: absolute;
-  bottom: -10px;
+  bottom: -26px;
   z-index: 2;
 
   background-color: var(--secondary-color);
   color: var(--primary-color);
 }
 
-.top{
+.top {
 
   grid-column: 1/ span 3;
   grid-row: 1 /span 1;
@@ -368,22 +357,22 @@ input[type=text]{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 300px;
+  width: 310px;
 
   border: 1px solid var(--primary-color);
-  border-top: none;
-  border-left: none;
+  /*border-top: none;*/
+  /*border-left: none;*/
   border-right: none;
 
   padding-left: 20px;
 
 }
 
-.top p{
+.top p {
   font-size: var(--font);
 }
 
-.top button{
+.top button {
   height: 100%;
 
 
@@ -401,19 +390,22 @@ input[type=text]{
 }
 
 
-.bottom{
+.bottom {
 
   grid-column: 1/ span 3;
   grid-row: 2 /span 3;
 
   display: flex;
 
-  width: 300px;
+  width: 310px;
   padding-left: 20px;
   padding-right: 20px;
 
   align-items: center;
   justify-content: space-between;
+
+  border: 1px solid var(--primary-color);
+  border-top: none;
 }
 
 

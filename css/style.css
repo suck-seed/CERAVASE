@@ -12,10 +12,12 @@
    ========================================================================== */
 
 :root {
-  --secondary-color: #f6f1eb; /* Blue */
+  --secondary-color: #f6f1eb; /* OG */
+  /*--secondary-color: #e1dad4; !* ALTERNATIVE TO MATCH BACKGROUND *!*/
   --primary-color: #403a34; /* Gray */
   --accent-color-green: #578E7E;
   --accent-color-beige: #c9c1b6;
+
 
   --header-height: 8rem;
   --header-shrink-height: 5rem;
@@ -154,6 +156,7 @@ body {
   padding: 0;
   height: 100%;
   background-color: var(--secondary-color);
+  /*background-image: url("img/bg-image.jpg");*/
 
 }
 
