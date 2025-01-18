@@ -1,67 +1,67 @@
 
 .main-lookbook {
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
 
 }
 
-.lookbook-section{
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
+.lookbook-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
 
 
-.lookbook-section img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.lookbook-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
-.lookbook-heading{
-  position: absolute;
-  bottom: 40px;
-  left: 40px;
-  z-index: 2;
+.lookbook-heading {
+    font-size: var(--font-1l);
+    font-weight: var(--font-weight-bold);
+    position: absolute;
+    z-index: 2;
 
-  color: var(--secondary-color);
-  font-size: var(--font-1l);
-  font-weight: var(--font-weight-bold);
+    bottom: 40px;
+    left: 40px;
+    color: var(--secondary-color);
 }
 
 
-.heading-01{
-  top: 10%;
-  left: 50%;
+.heading-01 {
+    top: 10%;
+    left: 50%;
 }
 
-.heading-02{
-  top: 15%;
-  left: 1%;
-  color: var(--primary-color);
-
-}
-
-
-.heading-03{
-  top: 10%;
-  left: 60%;
+.heading-02 {
+    top: 15%;
+    left: 1%;
+    color: var(--primary-color);
 
 }
 
 
-.heading-04{
-  top: 69%;
-  left: 3%
+.heading-03 {
+    top: 10%;
+    left: 60%;
+
 }
 
-.heading-05{
-  top: 58%;
-  left: 25%;
+
+.heading-04 {
+    top: 69%;
+    left: 3%
+}
+
+.heading-05 {
+    top: 58%;
+    left: 25%;
 
 }
 

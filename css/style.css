@@ -12,81 +12,82 @@
    ========================================================================== */
 
 :root {
-  --secondary-color: #f6f1eb; /* OG */
-  /*--secondary-color: #e1dad4; !* ALTERNATIVE TO MATCH BACKGROUND *!*/
-  --primary-color: #403a34; /* Gray */
-  --accent-color-green: #578E7E;
-  --accent-color-beige: #c9c1b6;
+    --secondary-color: #f6f1eb; /* OG */
+    /*--secondary-color: #e1dad4; !* ALTERNATIVE TO MATCH BACKGROUND *!*/
+    --primary-color: #403a34; /* Gray */
+    --accent-color-green: #578E7E;
+    --accent-color-beige: #c9c1b6;
 
 
-  --header-height: 8rem;
-  --header-shrink-height: 5rem;
+    --header-height: 8rem;
+    --header-shrink-height: 5rem;
 
-  --border-radius: 0;
-  --def-padding: 0.6rem 1rem 0.6rem 1rem;
-
-
-  /*  font sizes*/
-  --font-3s: 0.7rem;
-  --font-2s: 0.85rem;
-  --font-1s: 0.9rem;
-
-  --font: 1rem;
-
-  --font-1m: 1.15rem;
-  --font-2m: 1.3rem;
-  --font-3m: 1.45rem;
-  --font-4m: 1.6rem;
-
-  --font-1l: 5rem;
-  --font-2l: 6rem;
-  --font-3l: 8rem;
-  --font-4l: 10rem;
-  --font-5l: 12rem;
-
-  /* FONT WEIGHT */
-  --font-weight-light: 400;
-  --font-weight-mid: 500;
-  --font-weight-bold: 650;
-
-  --letter-spacing: 0.05em;
-
-  /*  margin */
-  --margin-l-top: 150px 0;
+    --border-radius: 0;
+    --def-padding: 0.6rem 1rem 0.6rem 1rem;
 
 
-/*  navbar height */
-  --nav-height: 54px
+    /*  font sizes*/
+    --font-3s: 0.7rem;
+    --font-2s: 0.85rem;
+    --font-1s: 0.9rem;
+
+    --font: 1rem;
+
+  
+    --font-1m: 1.15rem;
+    --font-2m: 1.3rem;
+    --font-3m: 1.45rem;
+    --font-4m: 1.6rem;
+
+    --font-1l: 5rem;
+    --font-2l: 6rem;
+    --font-3l: 8rem;
+    --font-4l: 10rem;
+    --font-5l: 12rem;
+
+    /* FONT WEIGHT */
+    --font-weight-light: 400;
+    --font-weight-mid: 500;
+    --font-weight-bold: 650;
+
+    --letter-spacing: 0.05em;
+
+    /*  margin */
+    --margin-l-top: 150px 0;
+
+
+    /*  navbar height */
+    --nav-height: 54px
 
 
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 
 }
 
 html {
-  color: var(--primary-color);
-  font-size: 1em;
-  line-height: 1.4;
-  font-family: "Bw Gradual DEMO", serif;
-  font-weight: bold;
+    font-family: "Bw Gradual DEMO", serif;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1.4;
+    color: var(--primary-color);
 
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 
 }
 
 ::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
+    background: #b3d4fc;
+    text-shadow: none;
 }
 
 ::selection {
-  background: #b3d4fc;
-  text-shadow: none;
+    background: #b3d4fc;
+    text-shadow: none;
 }
 
 /*
@@ -94,12 +95,12 @@ html {
  */
 
 hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
+    display: block;
+    height: 1px;
+    margin: 1em 0;
+    padding: 0;
+    border: 0;
+    border-top: 1px solid #ccc;
 }
 
 /*
@@ -114,33 +115,33 @@ iframe,
 img,
 svg,
 video {
-  vertical-align: middle;
+    vertical-align: middle;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
-label{
-  border: 0;
-  margin: 0;
-  padding: 0;
+label {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 textarea {
-  resize: vertical;
+    resize: vertical;
 }
 
 .invisible {
-  display: none;
-  visibility: hidden;
+    display: none;
+    visibility: hidden;
 }
 
 
@@ -151,12 +152,12 @@ textarea {
    ========================================================================== */
 
 body {
-  letter-spacing: 0.05em;
-  /*margin: 20px 20px;*/
-  padding: 0;
-  height: 100%;
-  background-color: var(--secondary-color);
-  /*background-image: url("img/bg-image.jpg");*/
+    height: 100%;
+    /*margin: 20px 20px;*/
+    padding: 0;
+    letter-spacing: 0.05em;
+    background-color: var(--secondary-color);
+    /*background-image: url("img/bg-image.jpg");*/
 
 }
 
@@ -164,122 +165,122 @@ body {
 /* MAIN FILE */
 
 .main-index {
-  height: 250vh;
+    height: 250vh;
 }
 
 .hero {
-  display: block;
-  position: relative;
+    position: relative;
+    display: block;
 
-  margin: 20px 20px;
+    overflow: hidden;
 
-  border: 1px solid var(--primary-color);
-  overflow: hidden;
+    margin: 20px 20px;
+    border: 1px solid var(--primary-color);
 }
 
 #hero-img {
-  width: 100%;
-  height: 95vh;
-  /*height: 1100px;*/
-  object-fit: cover;
+    width: 100%;
+    height: 95vh;
+    /*height: 1100px;*/
+    object-fit: cover;
 
 }
 
 
 #mini-description {
-  position: absolute;
-  left: 40px;
-  bottom: 220px;
+    font-size: var(--font-2s);
+    font-weight: var(--font-weight-bold);
+    position: absolute;
 
-  font-size: var(--font-2s);
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+    bottom: 220px;
+    left: 40px;
+    margin: 5px;
 
-  transform: translateY(-50%);
-  font-weight: var(--font-weight-bold);
+    transform: translateY(-50%);
+    letter-spacing: 0.05em;
 
-  margin: 5px;
+    text-transform: uppercase;
 
 }
 
 #main-description {
-  position: absolute;
-  left: 40px;
-  bottom: 90px;
+    font-size: 6rem;
+    font-weight: var(--font-weight-bold);
+    position: absolute;
 
-  font-size: 6rem;
+    bottom: 90px;
 
-  text-transform: uppercase;
-  letter-spacing: var(--letter-spacing);
-  /*transform: translateY(-50%);*/
-  font-weight: var(--font-weight-bold);
+    left: 40px;
+    margin: 5px;
+    /*transform: translateY(-50%);*/
+    letter-spacing: var(--letter-spacing);
 
-  margin: 5px;
+    text-transform: uppercase;
 
 }
 
 .assurance {
-  display: block;
-  position: relative;
-  margin: 5px;
+    position: relative;
+    display: block;
+    margin: 5px;
 }
 
 #sustainable {
-  position: absolute;
+    font-size: 3.7rem;
 
-  top: 125px;
-  left: 20px;
+    font-weight: var(--font-weight-bold);
+    position: absolute;
 
-  font-size: 3.7rem;
-  font-weight: var(--font-weight-bold);
+    top: 125px;
+    left: 20px;
 
 }
 
 
 #high-quality {
-  position: absolute;
-  font-size: var(--font-2m);
+    font-size: var(--font-2m);
+    position: absolute;
 
-  top: 400px;
-  right: 20px;
+    top: 400px;
+    right: 20px;
 }
 
 .enhance {
-  display: block;
-  position: relative;
+    position: relative;
+    display: block;
 
-  margin: 495px 0;
+    margin: 495px 0;
 
 }
 
 .enhance p {
-  position: absolute;
+    font-size: var(--font-2s);
 
-  left: 20px;
-  font-size: var(--font-2s);
-  font-weight: var(--font-weight-light);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+    font-weight: var(--font-weight-light);
+    position: absolute;
+    left: 20px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
 }
 
 #enhance01 {
-  position: absolute;
+    position: absolute;
 
-  width: 600px;
+    top: 400px;
 
-  left: 20px;
-  top: 400px;
+    left: 20px;
+    width: 600px;
 
 }
 
 #enhance02 {
-  position: absolute;
-  width: 600px;
+    position: absolute;
+    right: 20px;
 
-  right: 20px;
+    width: 600px;
 }
 
 
 @media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+    /* Style adjustments for viewports that meet the condition */
 }

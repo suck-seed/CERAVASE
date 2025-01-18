@@ -1,112 +1,108 @@
 .main-products {
 
-  height: 320vh;
+    position: relative;
 
-  position: relative;
-  display: block;
-
-
+    display: block;
+    height: 320vh;
 }
 
 .navbar {
-  z-index: 1000;
+    z-index: 1000;
 }
 
 .our-products {
-  position: relative;
-  display: block;
-  width: 400px;
+    font-size: var(--font-3l);
+    font-weight: var(--font-weight-mid);
+    position: relative;
 
-  top: 170px;
-  left: 20px;
+    top: 170px;
+    left: 20px;
 
-  margin-bottom: 300px;
+    display: block;
 
-  font-size: var(--font-3l);
-  font-weight: var(--font-weight-mid);
-
-
+    width: 400px;
+    margin-bottom: 300px;
 }
 
 .product-nav {
-  position: sticky;
-  z-index: 900; /* Lower than navbar's z-index */
+    position: sticky;
+    z-index: 900; /* Lower than navbar's z-index */
 
-  margin: 20px;
-  top: 100px;
-  /*left: 20px; left kam gardaina here*/;
+    top: 100px;
+    width: 19vw;
+    /*left: 20px; left kam gardaina here*/;
 
-  width: 19vw;
-  /*border: 1px solid var(--primary-color);*/
+    margin: 20px;
+    /*border: 1px solid var(--primary-color);*/
 }
 
 .type-list {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
-  width: 100%;
-  height: 84vh;
+    width: 100%;
+    height: 84vh;
 
-  border: 1px solid var(--primary-color);
-  border-top: none;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
 
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
+    border-top: none;
+    background-color: var(--secondary-color);
 }
 
 
 /* styling list */
 .type-list a {
-  text-decoration: none;
-  color: var(--primary-color);
+    font-size: var(--font-2s);
+    font-weight: var(--font-weight-bold);
 
-  font-size: var(--font-2s);
-  font-weight: var(--font-weight-bold);
-  width: 90%;
+    display: inline-flex;
+    width: 90%;
+    padding: 10px 20px 0 20px;
 
-  padding: 10px 20px 0 20px;
+    transition: padding 0.5s;
 
-  display: inline-flex;
+    text-decoration: none;
 
-  transition: padding 0.5s;
+    color: var(--primary-color);
 
 }
 
 .invisible {
-  background-color: var(--primary-color);
-  margin: 0 5px 0 0;
+    align-self: center;
+    width: 4px;
 
-  height: 4px;
-  width: 4px;
+    height: 4px;
+    margin: 0 5px 0 0;
 
-  align-self: center;
-  transition: padding 0.6s ease-in, visibility 0.6s ease-in;
+    transition: padding 0.6s ease-in, visibility 0.6s ease-in;
+    background-color: var(--primary-color);
 
 
 }
 
 /* dot on hover, visible*/
 .type-list a:hover .invisible {
-  display: block;
-  visibility: visible;
-  padding: 0 5px 0 0;
+    display: block;
+    visibility: visible;
+    padding: 0 5px 0 0;
 }
 
 
 input[type=text] {
-  font-family: "Bw Gradual DEMO", serif;
-  font-size: var(--font-2s);
-  font-weight: var(--font-weight-mid);
+    font-family: "Bw Gradual DEMO", serif;
+    font-size: var(--font-2s);
+    font-weight: var(--font-weight-mid);
 
-  padding: 15px 20px 15px 20px;
+    width: 100%;
 
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
+    padding: 15px 20px 15px 20px;
+    color: var(--primary-color);
 
-  outline: none;
-  border: 1px solid var(--primary-color);
-  border-radius: 0;
-  width: 100%;
+    border: 1px solid var(--primary-color);
+    border-radius: 0;
+    outline: none;
+    background-color: var(--secondary-color);
 }
 
 /*
@@ -117,123 +113,123 @@ PRODUCT ALIGNMENT
 
 .products {
 
-  position: absolute;
+    position: absolute;
 
-  margin-top: 629px;
-  margin-left: 25vw;
-  top: 0;
-  padding: 20px;
+    top: 0;
+    width: 74.4%;
+    margin-top: 629px;
+    margin-left: 25vw;
 
-  /*background-color: var(--primary-color);*/
-  width: 74.4%;
+    /*background-color: var(--primary-color);*/
+    padding: 20px;
 }
 
 .product {
-  padding: 10px;
-  margin: auto;
-  height: auto;
-  width: auto;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: auto;
 
-  position: absolute;
-  display: block;
+    height: auto;
+    margin: auto;
 
-  /*background-color: var(--accent-color-beige);*/
+    /*background-color: var(--accent-color-beige);*/
 
-  z-index: 1;
+    padding: 10px;
 }
 
 
 .product img {
-  object-fit: cover;
-  z-index: 1;
+    z-index: 1;
+    object-fit: cover;
 }
 
 .product p {
-  padding: 10px 10px 5px 0;
+    font-size: var(--font-4m);
 
-  font-size: var(--font-4m);
+    z-index: 1;
 
-  z-index: 1;
+    padding: 10px 10px 5px 0;
 }
 
 
 /* PRODUCT 1 */
 .product-1 {
 
-  top: 2vh;
-  left: 1vw;
+    top: 2vh;
+    left: 1vw;
 
 }
 
 #img01 {
-  width: 30vw;
-  height: 70vh;
+    width: 30vw;
+    height: 70vh;
 }
 
 
 /* PRODUCT 2 */
 .product-2 {
-  top: 2vh;
-  right: 0;
+    top: 2vh;
+    right: 0;
 }
 
 #img02 {
-  width: 30vw;
-  height: 55vh;
+    width: 30vw;
+    height: 55vh;
 }
 
 /* PRODUCT 3 */
 .product-3 {
 
-  top: 90vh;
-  left: 1vw;
+    top: 90vh;
+    left: 1vw;
 
 }
 
 #img03 {
-  width: 44vw;
-  height: 60vh;
+    width: 44vw;
+    height: 60vh;
 }
 
 
 /* PRODUCT 4 */
 .product-4 {
 
-  top: 90vh;
-  right: 0;
+    top: 90vh;
+    right: 0;
 
 }
 
 #img04 {
-  width: 25vw;
-  height: 40vh;
+    width: 25vw;
+    height: 40vh;
 }
 
 
 /* PRODUCT 5 */
 
 .product-5 {
-  top: 170vh;
-  right: 0;
+    top: 170vh;
+    right: 0;
 }
 
 #img05 {
-  width: 30vw;
-  height: 75vh;
+    width: 30vw;
+    height: 75vh;
 }
 
 
 .product-6 {
-  top: 170vh;
-  left: 1vw;
+    top: 170vh;
+    left: 1vw;
 }
 
 #img06 {
 
 
-  width: 20vw;
-  height: 45vh;
-  object-fit: cover;
+    width: 20vw;
+    height: 45vh;
+    object-fit: cover;
 }
 
 
@@ -241,171 +237,171 @@ PRODUCT ALIGNMENT
 
 .custom-order {
 
-  position: relative;
-  width: 100vw;
-  height: 80vh;
+    position: relative;
+    width: 100vw;
+    height: 80vh;
 
 }
 
 .custom-order img {
-  width: 100vw;
-  /*height: 75vh;*/
+    width: 100vw;
+    /*height: 75vh;*/
 
-  object-fit: cover;
+    object-fit: cover;
 }
 
 
 .for-any {
-  position: absolute;
-  top: 70px;
-  left: 15px;
+    font-size: var(--font-2l);
+    position: absolute;
+    top: 70px;
 
-  color: var(--secondary-color);
-  font-size: var(--font-2l);
+    left: 15px;
+    color: var(--secondary-color);
 }
 
 
 .request {
-  position: absolute;
-  top: 300px;
-  right: 15px;
+    font-size: var(--font-2l);
+    position: absolute;
+    top: 300px;
 
-  color: var(--secondary-color);
-  font-size: var(--font-2l);
+    right: 15px;
+    color: var(--secondary-color);
 
 }
 
 
 .order-box {
-  position: absolute;
+    position: absolute;
 
-  /* placing in center */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 0%);
+    /* placing in center */
+    top: 50%;
+    left: 50%;
+    display: flex;
 
-  width: 650px;
-  height: 350px;
+    align-items: center;
+    flex-direction: column;
 
-  padding: 20px;
+    justify-content: space-around;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
+    width: 650px;
+    height: 350px;
+    padding: 20px;
+    transform: translate(-50%, 0%);
+    text-align: center;
 
-  background-color: var(--secondary-color);
-  border: 1px solid var(--primary-color);
+    border: 1px solid var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 .order-box p {
-  color: var(--primary-color);
-  font-size: var(--font-4m);
-  font-weight: var(--font-weight-bold);
+    font-size: var(--font-4m);
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-color);
 }
 
 .order-box button {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
+    font-size: var(--font-1s);
+    font-weight: var(--font-weight-bold);
 
-  font-size: var(--font-1s);
-  font-weight: var(--font-weight-bold);
+    padding: 20px 40px;
+    color: var(--primary-color);
 
-  border: 1px solid var(--primary-color);
-  padding: 20px 40px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--secondary-color);
 
 
 }
 
 
 .order-box button:hover {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 
 .product-details {
-  display: none;
+    display: none;
 }
 
 
 .product:hover .product-details {
-  display: grid;
+    position: absolute;
 
-  height: 130px;
-  width: 310px;
+    z-index: 2;
+    bottom: -26px;
 
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+    display: grid;
+    width: 310px;
 
-  /*border: 1px solid var(--primary-color);*/
+    /*border: 1px solid var(--primary-color);*/
 
-  position: absolute;
-  bottom: -26px;
-  z-index: 2;
+    height: 130px;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
 
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .top {
 
-  grid-column: 1/ span 3;
-  grid-row: 1 /span 1;
+    display: flex;
+    align-items: center;
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 310px;
+    justify-content: space-between;
+    width: 310px;
+    padding-left: 20px;
+    border: 1px solid var(--primary-color);
 
-  border: 1px solid var(--primary-color);
-  /*border-top: none;*/
-  /*border-left: none;*/
-  border-right: none;
+    border-right: none;
+    /*border-top: none;*/
+    /*border-left: none;*/
+    grid-column: 1/ span 3;
 
-  padding-left: 20px;
+    grid-row: 1 /span 1;
 
 }
 
 .top p {
-  font-size: var(--font);
+    font-size: var(--font);
 }
 
 .top button {
-  height: 100%;
+    font-size: var(--font-1s);
 
 
-  padding: 0 20px 0 20px;
-  margin: 0;
+    font-weight: var(--font-weight-bold);
+    height: 100%;
 
-  border: none;
-  border-radius: 0;
+    margin: 0;
+    padding: 0 20px 0 20px;
 
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+    color: var(--secondary-color);
+    border: none;
 
-  font-size: var(--font-1s);
-  font-weight: var(--font-weight-bold);
+    border-radius: 0;
+    background-color: var(--primary-color);
 }
 
 
 .bottom {
 
-  grid-column: 1/ span 3;
-  grid-row: 2 /span 3;
+    display: flex;
+    align-items: center;
 
-  display: flex;
+    justify-content: space-between;
 
-  width: 310px;
-  padding-left: 20px;
-  padding-right: 20px;
+    width: 310px;
+    padding-right: 20px;
+    padding-left: 20px;
 
-  align-items: center;
-  justify-content: space-between;
+    border: 1px solid var(--primary-color);
+    border-top: none;
 
-  border: 1px solid var(--primary-color);
-  border-top: none;
+    grid-column: 1/ span 3;
+    grid-row: 2 /span 3;
 }
 
 
