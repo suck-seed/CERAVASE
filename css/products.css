@@ -321,6 +321,7 @@ PRODUCT ALIGNMENT
 }
 
 
+/* PRODUCT DETAILS ON HOVER */
 .product-details {
     display: none;
 }
@@ -404,6 +405,14 @@ PRODUCT ALIGNMENT
     grid-row: 2 /span 3;
 }
 
+
+.bottom p:nth-child(2) {
+    color: var(--accent-color-green);
+}
+
+/*.product-detail-price{*/
+/*    color: var(--accent-color-green);*/
+/*}*/
 
 
 
